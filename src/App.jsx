@@ -17,7 +17,7 @@ export default function App() {
 
     return (
         <div className="mx-auto p-4">
-            <div className="w-[60%] p-5 text-center mx-auto">
+            <div className="w-full md:w-[60%] p-5 text-center mx-auto">
                 <h1 className="text-2xl font-bold mb-4">Mini-Country Viewer</h1>
                 <SearchBar searchTerm={searchTerm} onChange={setSearchTerm} />
             </div>
