@@ -21,9 +21,9 @@ export default function App() {
                 <h1 className="text-2xl font-bold mb-4">Mini-Country Viewer</h1>
                 <SearchBar searchTerm={searchTerm} onChange={setSearchTerm} />
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4 items-start">
                 {filtered.map((country, idx) => (
-                <CountryCard key={idx} country={country} />
+                    <CountryCard key={idx} country={country} />
                 ))}
             </div>
         </div>
